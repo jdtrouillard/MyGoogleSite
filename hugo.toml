@@ -1,16 +1,54 @@
-[params]
-    title = "Jean-Dominique Trouillard"
-    description = "Mon Portfolio & Articles"
-    
-    # Infos de base
-    [params.about]
-        enable = true
-        title = "À propos de moi"
-        content = "Je suis passionné par le développement web et le cloud. Bienvenue sur mon site exposé via Cloudflare !"
-        image = "https://raw.githubusercontent.com/gurusabarish/hugo-profile/main/images/avatar.png" # Image de test
+baseURL = 'https://mygooglesite.pages.dev/'
+languageCode = 'fr-fr'
+title = 'Jean-Dominique Trouillard'
+theme = "github.com/gurusabarish/hugo-profile"
 
-    # Activation des sections
+# Configuration des modules pour que Cloudflare télécharge le thème
+[module]
+  [[module.imports]]
+    path = "github.com/gurusabarish/hugo-profile"
+
+[params]
+    # Infos de base qui s'affichent sous ton nom
+    title = "Jean-Dominique Trouillard"
+    subtitle = "Développeur & Passionné de Cloud"
+    description = "Bienvenue sur mon site personnel exposé via Cloudflare."
+    
+    # Photo de profil (Lien de test, on la changera après)
+    image = "https://raw.githubusercontent.com/gurusabarish/hugo-profile/main/images/avatar.png"
+
+    # Activation des sections de la page d'accueil
+    showSubtitle = true
+    showSummary = true
+    
     [params.sections]
         about = true
         experience = true
+        education = true
         blog = true
+
+    # Configuration de la section "À Propos"
+    [params.about]
+        enable = true
+        title = "À propos de moi"
+        content = "Passionné par les nouvelles technologies, j'utilise ce site pour partager mon parcours et mes articles techniques. Déployé avec Hugo et Cloudflare."
+
+# Menu de navigation en haut de page
+[[menu.main]]
+    name = "À Propos"
+    url = "#about"
+    weight = 1
+[[menu.main]]
+    name = "Expériences"
+    url = "#experience"
+    weight = 2
+[[menu.main]]
+    name = "Articles"
+    url = "blogs"
+    weight = 3
+
+# Configuration du format des articles
+[taxonomies]
+    category = 'categories'
+    tag = 'tags'
+    series = 'series'
