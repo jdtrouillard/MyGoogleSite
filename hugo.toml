@@ -11,3 +11,13 @@ theme = "github.com/gurusabarish/hugo-profile"
     title = "Jean-Dominique Trouillard" # Mets ton nom ici
     description = "Bienvenue sur mon portfolio"
     # On ajoutera les sections CV et Articles juste après
+
+    # ... tes infos précédentes ...
+    showSubtitle = true
+    showSummary = true
+    
+    # Pour afficher les sections
+    [params.sections]
+        experience = true
+        blog = true
+        about = true
