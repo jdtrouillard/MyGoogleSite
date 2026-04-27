@@ -1,36 +1,16 @@
-baseURL = 'https://ton-site.pages.dev/'
-languageCode = 'fr-fr'
-title = 'Mon CV et mes Articles'
-theme = "github.com/gurusabarish/hugo-profile"
-
-[module]
-  [[module.imports]]
-    path = "github.com/gurusabarish/hugo-profile"
-
 [params]
-    title = "Jean-Dominique Trouillard" # Mets ton nom ici
-    description = "Bienvenue sur mon portfolio"
-    # On ajoutera les sections CV et Articles juste après
-
-    # ... tes infos précédentes ...
-    showSubtitle = true
-    showSummary = true
+    title = "Jean-Dominique Trouillard"
+    description = "Mon Portfolio & Articles"
     
-    # Pour afficher les sections
+    # Infos de base
+    [params.about]
+        enable = true
+        title = "À propos de moi"
+        content = "Je suis passionné par le développement web et le cloud. Bienvenue sur mon site exposé via Cloudflare !"
+        image = "https://raw.githubusercontent.com/gurusabarish/hugo-profile/main/images/avatar.png" # Image de test
+
+    # Activation des sections
     [params.sections]
+        about = true
         experience = true
         blog = true
-        about = true
-# On crée le menu en haut à droite
-[[menu.main]]
-    name = "À Propos"
-    url = "#about"
-    weight = 1
-[[menu.main]]
-    name = "Expériences"
-    url = "#experience"
-    weight = 2
-[[menu.main]]
-    name = "Blog"
-    url = "blogs"
-    weight = 3
