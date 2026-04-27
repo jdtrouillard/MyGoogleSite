@@ -1,5 +1,5 @@
 [[item]]
-    company = "Nom de l'entreprise"
-    designation = "Ton poste"
-    duration = "2023 - Présent"
-    description = "Ce que tu as accompli de génial."
+    company = "Mon Projet Web"
+    designation = "Développeur Cloudflare"
+    duration = "2026 - Présent"
+    description = "Mise en place d'un site Hugo sur Cloudflare Pages."
