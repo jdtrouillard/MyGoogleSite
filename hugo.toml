@@ -1,0 +1,9 @@
+baseURL = 'https://ton-site.pages.dev/'
+languageCode = 'fr-fr'
+title = 'Mon CV et mes Articles'
+theme = 'hugo-profile'
+
+[params]
+    title = "Jean-Dominique Trouillard" # Mets ton nom ici
+    description = "Bienvenue sur mon portfolio"
+    # On ajoutera les sections CV et Articles juste après
