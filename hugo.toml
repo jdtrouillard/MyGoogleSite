@@ -1,5 +1,5 @@
 baseURL = 'https://mygooglesite.pages.dev/'
-languageCode = 'fr-fr'
+languageCode = 'en-us'
 title = 'Jean-Dominique Trouillard'
 theme = "github.com/gurusabarish/hugo-profile"
 
