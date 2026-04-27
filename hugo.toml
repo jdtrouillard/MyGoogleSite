@@ -1,6 +1,8 @@
 baseURL = 'https://ton-site.pages.dev/'
 languageCode = 'fr-fr'
 title = 'Mon CV et mes Articles'
+theme = "github.com/gurusabarish/hugo-profile"
+
 [module]
   [[module.imports]]
     path = "github.com/gurusabarish/hugo-profile"
